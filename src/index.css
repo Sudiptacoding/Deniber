@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Object Sans Is not free so i use the font . */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom styles for the slider dots */
+.slick-dots li button:before {
+  color: #FFD700; /* Custom color for the dots (gold in this case) */
+  font-size: 12px; /* Adjust the size if needed */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FF4500; /* Custom color for the active dot (orange-red in this case) */
+}
+
+.slider-container {
+  margin-left: -15px; /* Adjust as needed */
+}
