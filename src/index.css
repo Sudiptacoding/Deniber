@@ -11,14 +11,55 @@ body {
 
 /* Custom styles for the slider dots */
 .slick-dots li button:before {
-  color: #FFD700; /* Custom color for the dots (gold in this case) */
-  font-size: 12px; /* Adjust the size if needed */
+  color: #FFD700;
+  /* Custom color for the dots (gold in this case) */
+  font-size: 12px;
+  /* Adjust the size if needed */
 }
 
 .slick-dots li.slick-active button:before {
-  color: #FF4500; /* Custom color for the active dot (orange-red in this case) */
+  color: #FF4500;
+  /* Custom color for the active dot (orange-red in this case) */
 }
 
 .slider-container {
-  margin-left: -15px; /* Adjust as needed */
+  margin-left: -15px;
+  /* Adjust as needed */
+}
+
+.range-slider {
+  background-color: #FDE8E9 !important;
+  height: 4px !important;
+}
+
+.range-slider .range-slider__thumb {
+  background-color: red !important;
+  width: 15px !important;
+  height: 15px !important;
+
+}
+
+.range-slider .range-slider__range {
+  background-color: red !important;
+}
+
+.checkbox {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 4px !important;
+}
+
+.pagination .active>.page-link {
+  background-color: #444955 !important;
+  color: white !important;
+}
+
+.pagination .page-link {
+  color: black !important;
+}
+
+.responsive {
+  height: fit-content !important;
+  background-color: white;
+  
 }

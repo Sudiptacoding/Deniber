@@ -4,7 +4,7 @@ import FeaturedProperties from '../../components/FeaturedProperties/FeaturedProp
 import AllServices from '../../components/AllServices/AllServices';
 import OurCustomerFeedback from '../../components/OurCustomerFeedback/OurCustomerFeedback';
 import Landlord from '../../components/Landlord/Landlord';
-import Footer from '../../components/Footer/Footer';
+
 
 const Home = () => {
     return (
@@ -18,7 +18,6 @@ const Home = () => {
             </div>
             <OurCustomerFeedback></OurCustomerFeedback>
             <Landlord></Landlord>
-            <Footer></Footer>
         </div>
     );
 };

@@ -12,7 +12,7 @@ const Banner = () => {
       }}
     >
       {/* Overlay content */}
-      <div className="py-40 lg:w-[897px] w-full md:px-20 px-5 text-gray-600 dark:text-gray-300 outline-none focus:outline-none">
+      <div className="py-24 lg:w-[897px] w-full md:px-20 px-5 text-gray-600 dark:text-gray-300 outline-none focus:outline-none">
         <h1 className='text-center md:text-[56px] text-5xl font-extrabold text-white leading-[72px] pb-10'>
           One step closer to your dream home.
         </h1>

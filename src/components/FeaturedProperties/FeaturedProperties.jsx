@@ -60,7 +60,7 @@ const FeaturedProperties = () => {
     };
 
     return (
-        <div className="px-5 mx-auto my-14 2xl:px-80">
+        <div className="px-5 mx-auto my-14 2xl:px-[300px]">
             <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-extrabold text-secondary">Featured Properties</h2>
                 <div>

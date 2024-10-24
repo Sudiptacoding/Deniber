@@ -28,8 +28,8 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 2xl:px-[300px] px-0 justify-around py-2">
-            <div className="navbar-start w-[30%]">
+        <div className="navbar bg-base-100 2xl:px-[300px] px-5 justify-around py-2">
+            <div className="navbar-start lg:w-[18%] xl:w-[30%]">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <li><a>Service</a></li>
                     </ul>
                 </div>
-                <a className="text-xl btn btn-ghost hover:bg-transparent"><img className='w-36' src={logo} alt="logo" /></a>
+                <a className=""><img className='w-36' src={logo} alt="logo" /></a>
             </div>
             <div className="hidden navbar-center lg:flex">
                 <ul className="gap-10 px-1 menu menu-horizontal">
