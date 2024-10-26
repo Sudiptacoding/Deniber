@@ -61,5 +61,62 @@ body {
 .responsive {
   height: fit-content !important;
   background-color: white;
-  
+
+}
+
+/* Stapper */
+
+.siteBody {
+  height: calc(100% - 164px);
+  padding-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0px 8px 14px -17px #111;
+  width: 100%;
+}
+
+.sideBar {
+  height: 100%;
+  width: 400px;
+  height: 100%;
+}
+
+.stepSummary {
+  width: 80px;
+  height: 100%;
+}
+
+.mainSection {
+  height: 50%;
+  width: calc(100% - 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+
+._TnRfYcVLEfim2hEneRQ {
+  border: 7px solid #ff00d9 !important;
+  ;
+}
+
+
+/* Stepper */
+.steps-vertical .step:before {
+  width: 3px !important;
+}
+
+.steps .step:before {
+  background-color: #ED1C24 !important;
+}
+
+.steps .step:after {
+  color: oklch(0.28 0.03 256.85 / 0) !important;
+  background-color: #ED1C24 !important;
+  border: 3px solid white !important;
+}
+
+/* Form colour */
+.select:focus {
+  outline-style: none !important;
 }

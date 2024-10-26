@@ -14,7 +14,7 @@ const Landlord = () => {
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="relative w-full px-5 py-16 text-center rounded-lg 2xl:px-64">
+        <div className="relative w-full px-5 py-16 text-center rounded-lg 2xl:px-64 lg:px-40">
           <h1 className="text-base font-normal text-white">No Spam Promise</h1>
           <p className="py-2 text-2xl font-extrabold text-white">
             Are you a landlord?
@@ -24,17 +24,10 @@ const Landlord = () => {
           </p>
 
           <div className="relative flex">
-            <input
-              type="search"
-              name="search"
+            <input type='text'
               placeholder="Enter your email/phone number"
-              className="flex w-full px-4 py-6 text-sm bg-white outline-none rounded-2xl focus:outline-none"
-              autoComplete="off"
-              spellCheck="false"
-              required
-              step="any"
-              autoCapitalize="none"
-              autoFocus
+              className="flex w-full px-4 py-6 text-sm bg-white outline-none rounded-2xl focus:outline-none"    
+
             />
             <button className="bg-primary absolute right-[13px] top-[12px] text-white lg:px-10 lg:py-3 px-5 py-3 rounded-lg hover:bg-primary-dark focus:outline-none">
               Submit
