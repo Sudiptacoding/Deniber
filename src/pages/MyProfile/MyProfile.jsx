@@ -49,14 +49,14 @@ const MyProfile = () => {
         <div className='2xl:px-[300px] px-5'>
             <h2 className='py-4 text-2xl font-extrabold border-b text-secondary'>Account</h2>
 
-            <div className="flex flex-col min-h-screen pt-0 md:pt-4 md:flex-row">
+            <div className="flex flex-col min-h-screen pt-0 lg:pt-4 lg:flex-row">
 
                 <div
-                    className={`fixed md:relative inset-y-0 left-0  bg-white w-64 md:w-52 transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                        } md:translate-x-0 transition-transform duration-300 ease-in-out z-20 md:z-auto`}
+                    className={`fixed lg:relative inset-y-0 left-0  bg-white w-64 lg:w-52 transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                        } lg:translate-x-0 transition-transform duration-300 ease-in-out z-20 lg:z-auto`}
                 >
                     <ul className="flex flex-col p-4 space-y-4">
-                        <li className='flex justify-end md:hidden'>
+                        <li className='flex justify-end lg:hidden'>
                             <button onClick={() => closeMenu('Profile')} className="p-1 border rounded-full cursor-pointer hover:btn-ghost">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -109,17 +109,17 @@ const MyProfile = () => {
                 </div>
 
                 {/* Right-Side Main Content */}
-                <div className="flex-grow md:mt-0 md:pl-10">
+                <div className="flex-grow lg:mt-0 lg:pl-10">
                     {/* Mobile Menu Toggle Button */}
                     <button
                         onClick={toggleMenu}
-                        className="p-1 my-1 text-3xl transform border rounded-lg shadow-md hover:text-primary hover:bg-[#FDE8E9] md:hidden"
+                        className="p-1 my-1 text-3xl transform border rounded-lg shadow-md hover:text-primary hover:bg-[#FDE8E9] lg:hidden"
                     >
                         <BsFilterLeft />
                     </button>
 
                     {/* Main Content Area */}
-                    <div className="bg-white w-full md:max-w-[1056px] mx-auto md:border-l">
+                    <div className="bg-white w-full lg:max-w-[1056px] mx-auto lg:border-l">
                         {renderActiveComponent()} {/* Renders the active component based on selection */}
                     </div>
                 </div>
@@ -130,3 +130,4 @@ const MyProfile = () => {
 };
 
 export default MyProfile;
+

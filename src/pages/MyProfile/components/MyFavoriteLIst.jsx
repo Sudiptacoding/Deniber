@@ -41,11 +41,11 @@ const MyFavoriteLIst = () => {
         },
     ];
     return (
-        <div className='pl-6 border-l'>
+        <div className='pl-6 border-l-0 md:border-l'>
             <div className='mb-6'>
                 <h1 className='py-2 text-xl font-extrabold text-[#444955]'>My favorite list</h1>
             </div>
-            <div className='flex flex-wrap gap-6'>
+            <div className='flex flex-wrap items-center justify-center gap-6'>
                 {properties.map((property) => (
                     <div
                         key={property.id}

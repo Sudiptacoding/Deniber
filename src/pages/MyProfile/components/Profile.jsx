@@ -18,7 +18,7 @@ const Profile = () => {
 
 
     return (
-        <div className="p-6">
+        <div className="px-2 pt-4 md:p-6">
 
             {/* Photo section */}
             <div className="relative h-40 rounded-t-xl bg-[url('https://i.postimg.cc/MGFgLrn6/image-6.png')] bg-no-repeat bg-cover bg-center"></div>

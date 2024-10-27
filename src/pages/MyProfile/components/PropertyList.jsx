@@ -47,7 +47,7 @@ const PropertyList = () => {
 
 
     return (
-        <div className="w-full pl-0 md:pl-6">
+        <div className="pl-0 md:pl-6">
             {/* Top section: Property list (left) and Add Property (right) buttons */}
             <div className="flex justify-between w-full py-2">
                 <h2 className='text-xl font-extrabold text-secondary '>Property list</h2>
@@ -56,19 +56,19 @@ const PropertyList = () => {
                 </button>
             </div>
 
+
+
+
+
+
+
+
             <div className=''>
                 {
                     !properties?.lenght > 0 ?
-                        <div className="w-full overflow-x-auto 
-                         [&::-webkit-scrollbar]:w-2
-                        [&::-webkit-scrollbar-track]:rounded-full
-                        [&::-webkit-scrollbar-track]:bg-gray-100
-                        [&::-webkit-scrollbar-thumb]:rounded-full
-                        [&::-webkit-scrollbar-thumb]:bg-gray-300
-                        dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-                        dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+                        <div className="w-full overflow-x-auto ">
                             <div className="grid min-w-full gap-y-2">
-                                <div className="grid grid-cols-10  py-4  text-center border-b shadow-sm mb-2 min-w-[720px]">
+                                <div className="grid grid-cols-10  py-4  text-center border-b shadow-sm mb-2 min-w-[824px] ">
                                     <div className="col-span-4 text-left">Properties</div>
                                     <div className="col-span-1">Location</div>
                                     <div className="col-span-1">Type</div>
@@ -79,7 +79,7 @@ const PropertyList = () => {
                                 </div>
 
                                 {properties.map((property) => (
-                                    <div key={property.id} className="grid grid-cols-10  bg-white rounded-lg shadow  min-w-[1020px] text-center items-center"                        >
+                                    <div key={property.id} className="grid grid-cols-10  bg-white rounded-lg shadow  min-w-[824px]  text-center items-center"                        >
                                         <div className="flex items-center col-span-4 text-left">
                                             <img
                                                 src="https://i.postimg.cc/WbgkjFkx/image-7.png"
