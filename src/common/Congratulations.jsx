@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Congratulations = () => {
     return (
-        <div className='px-5 py-6 text-center'>
+        <div className='py-6 text-center md:px-5'>
             <div className='flex items-center justify-center w-full'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="168" height="176" viewBox="0 0 168 176" fill="none">
                     <path d="M59.087 52.3675L59.0234 51.6979L59.1647 45.393L59.8496 40.1453L65.0645 36.7584L69.1143 37.9602C69.1187 38.4325 69.1589 38.9037 69.2343 39.3699C69.2343 39.3699 69.6474 47.0635 68.7471 48.5331C67.9103 49.9076 65.9437 50.038 65.5059 50.8274C64.9586 51.8072 64.8597 54.3235 64.8597 54.3235C64.8597 54.3235 60.0191 54.4575 59.087 52.3675Z" fill="white" />
@@ -148,7 +148,7 @@ const Congratulations = () => {
                     <path d="M119.675 96.5657C119.675 97.2925 119.595 98.017 119.435 98.7261C119.35 97.9971 119.432 97.2583 119.675 96.5657Z" fill="#444955" />
                 </svg>
             </div>
-            <h3 className='text-[#737780] pt-4 px-36'>Congratulations for adding your property to "Rent". We will verify this and get back to you as soon as possible. Thank you for choosing us again.</h3>
+            <h3 className='text-[#737780] pt-4 md:px-5 lg:px-36'>Congratulations for adding your property to "Rent". We will verify this and get back to you as soon as possible. Thank you for choosing us again.</h3>
             <p className='text-[#444955] py-4'>Need any help?  <NavLink to='/'><span className='font-extrabold text-primary '>Contact us</span></NavLink></p>
             <NavLink to='/'><button className='px-8 py-2 font-extrabold border rounded-lg text-primary border-primary'>Back to home</button></NavLink>
         </div>

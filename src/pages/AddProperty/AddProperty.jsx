@@ -133,9 +133,9 @@ const AddProperty = () => {
     return (
         <div className=' 2xl:px-[300px] px-5'>
             <div>
-                <h3>Add your property</h3>
+                <h3 className='text-[#444955] text-2xl font-extrabold border-b pb-4 mb-4'>Add your property</h3>
             </div>
-            <div className="flex px-16 border shadow-lg rounded-xl py-14">
+            <div className="flex border shadow-lg md:px-16 rounded-xl py-14">
                 {/* Left Side Steps */}
                 <ul className="w-16 mt-10 steps steps-vertical">
                     {steps.map((stepLabel, index) => {
@@ -157,7 +157,7 @@ const AddProperty = () => {
                 </ul>
 
                 {/* Right Side Content */}
-                <div className="flex-1 pl-5 ">
+                <div className="flex-1 p-2 md:pl-5 ">
                     {activeStep === 1 && (
                         <div className="">
                             <p className=' text-primary'>4 simple steps </p>
@@ -165,7 +165,7 @@ const AddProperty = () => {
                             <div className="max-w-2xl">
                                 {
                                     step1Card?.map((item, i) => (
-                                        <button key={i} className="flex items-center justify-between w-full gap-16 p-6 mb-4 border border-[#D0D1D4] rounded-2xl" onClick={() => handleCardSelect(i, item)}>
+                                        <button key={i} className="flex items-center justify-between w-full md:gap-16 gap-1 p-6 mb-4 border border-[#D0D1D4] rounded-2xl" onClick={() => handleCardSelect(i, item)}>
                                             <div className='text-left '>
                                                 <h4 className='text-[#444955] font-extrabold'>{item?.tile}</h4>
                                                 <p className='text-[#737780] pt-2'>{item?.description}</p>
@@ -188,7 +188,7 @@ const AddProperty = () => {
                     )}
 
                     {activeStep === 2 && (
-                        <div className="pl-5">
+                        <div className="p-2 md:pl-5">
                             <p className=' text-primary'>4 simple steps </p>
                             <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">Step 2: {steps[1]}</h2>
                             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -224,7 +224,7 @@ const AddProperty = () => {
                     )}
 
                     {activeStep === 3 && (
-                        <div className="pl-5">
+                        <div className="p-2 md:pl-5">
                             <p className=' text-primary'>4 simple steps </p>
                             <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">Step 3: {steps[2]}</h2>
                             <div className="flex flex-col ">
@@ -280,7 +280,7 @@ const AddProperty = () => {
                     )}
 
                     {activeStep === 4 && (
-                        <div className="pl-5 ">
+                        <div className="p-2 md:pl-5 ">
                             <p className=' text-primary'>4 simple steps </p>
                             <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">Step 4: {steps[3]}</h2>
                             <div className="flex flex-col mt-2 space-y-2">
@@ -363,7 +363,7 @@ const AddProperty = () => {
                         </div>
                     )}
                     {activeStep === 5 && (
-                        <div className="pl-5 ">
+                        <div className="p-2 md:pl-5 ">
                             <p className=' text-primary'>4 simple steps </p>
                             <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">Step 5: {steps[4]}</h2>
                             <div className="p-4 space-y-4">
@@ -402,7 +402,7 @@ const AddProperty = () => {
                     )}
 
                     {activeStep === 6 && (
-                        <div className="pl-5 ">
+                        <div className="p-2 md:pl-5">
                             <p className=' text-primary'>4 simple steps </p>
                             <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">Step 6: {steps[5]}</h2>
                             <div className="flex flex-wrap items-center gap-5">
@@ -423,14 +423,14 @@ const AddProperty = () => {
 
                     {activeStep === 7 && (
                         <>
-                            <div className={`pl-5  ${step7checkd ? '' : 'hidden'}`}>
+                            <div className={`md:pl-5 p-2 ${step7checkd ? '' : 'hidden'}`}>
                                 <p p className=' text-primary'>You’ve accomplished it! </p>
                                 <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">{steps[6]}</h2>
                                 <div>
                                     <Congratulations></Congratulations>
                                 </div>
                             </div>
-                            <div className={`pl-5  ${step7checkd ? 'hidden' : ''}`}>
+                            <div className={`md:pl-5 p-2  ${step7checkd ? 'hidden' : ''}`}>
                                 <p p className=' text-primary'>"Oops! We're sorry</p>
                                 <h2 className="text-secondary text-[28px] font-extrabold pt-4 pb-6">You haven't completed all the steps yet.</h2>
                                 <div className='pt-20 text-center'>
@@ -448,7 +448,7 @@ const AddProperty = () => {
                         <button
                             onClick={() => activeStep > 1 && setActiveStep(activeStep - 1)}
                             disabled={activeStep === 1}
-                            className="px-8 flex items-center gap-4 py-2 text-common border border-[#D0D1D4] rounded-lg disabled:opacity-50"
+                            className="md:px-8 px-3 flex items-center md:gap-4 gap-2 py-2 text-common border border-[#D0D1D4] rounded-lg disabled:opacity-50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M10 12.6666L5.33333 7.99998L10 3.33331" stroke="#737780" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -458,7 +458,7 @@ const AddProperty = () => {
                         <button
                             onClick={() => activeStep < totalSteps && setActiveStep(activeStep + 1)}
                             disabled={activeStep === totalSteps}
-                            className="flex items-center gap-4 px-8 py-2 font-bold text-white rounded-lg bg-primary disabled:opacity-50"
+                            className="flex items-center gap-2 px-3 py-2 font-bold text-white rounded-lg md:gap-4 md:px-8 bg-primary disabled:opacity-50"
                         >
                             Next
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
